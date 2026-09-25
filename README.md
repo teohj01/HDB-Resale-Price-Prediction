@@ -7,7 +7,7 @@ This project implements a machine learning pipeline to predict HDB (Housing & De
 
 ### Requirements
 - Anaconda or Miniconda
-- Python 3.12
+- Python 3.11
 - Required packages listed in `requirements.txt`
 
 ### Installation
@@ -19,7 +19,7 @@ This project implements a machine learning pipeline to predict HDB (Housing & De
 
 2. Create and activate a conda environment:
     ```
-    conda create -n hdbenv python=3.12
+    conda create -n hdbenv python=3.11
     conda activate hdbenv
     ```
 
