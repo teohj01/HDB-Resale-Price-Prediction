@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.venv/
+
+# macOS
+.DS_Store
