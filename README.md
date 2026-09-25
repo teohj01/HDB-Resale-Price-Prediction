@@ -13,8 +13,8 @@ This project implements a machine learning pipeline to predict HDB (Housing & De
 ### Installation
 1. Clone the repository:
     ```
-    git clone https://github.com/yourusername/yourreponame.git
-    cd hdb-resale-price-prediction
+    git clone https://github.com/teohj01/HDB-Resale-Price-Prediction.git
+    cd HDB-Resale-Price-Prediction
     ```
 
 2. Create and activate a conda environment:
