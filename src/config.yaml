@@ -1,0 +1,45 @@
+# Data paths
+raw_data_path: data/resale_transactions.csv
+hdb_address: data/cleaned_resale_transactions.csv
+
+# Amenity coordinates: each key becomes a 'distance_to_<key>' feature
+amenity_paths:
+  school: data/school_coords.csv
+  mrt: data/station_coords.csv
+  mall: data/mall_coords.csv
+
+# Train/validation/test split (80/10/10)
+target_column: resale_price
+val_test_size: 0.2
+val_size: 0.5
+param_grid:
+  regressor__alpha: [0.1, 1, 10, 100, 1000]
+  regressor__fit_intercept: [True, False]
+cv: 5
+scoring: r2
+
+# Preprocessing
+numerical_features:
+  - floor_area_sqm
+  - remaining_lease_months
+  - lease_commence_date
+  - year
+  - distance_to_school
+  - distance_to_mrt
+  - distance_to_mall
+nominal_features:
+  - month
+  - town_name
+  - flatm_name
+ordinal_features:
+  - flat_type
+flat_type_categories:
+  - 1 ROOM
+  - 2 ROOM
+  - 3 ROOM
+  - 4 ROOM
+  - 5 ROOM
+  - MULTI-GENERATION
+  - EXECUTIVE
+passthrough_features:
+  - storey_range
