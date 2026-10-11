@@ -3,7 +3,7 @@
 ## Project Description
 This project implements a machine learning pipeline to predict HDB (Housing & Development Board) resale prices in Singapore. The pipeline includes data cleaning, preprocessing, model training, and evaluation. Multiple regression models are trained and compared to find the best performing one based on various metrics.
 
-Try this live price estimator at https://hdb-resale-price-estimator.onrender.com.
+👉🏻 Try this live price estimator at https://hdb-resale-price-estimator.onrender.com.
 
 <table>
   <tr>
